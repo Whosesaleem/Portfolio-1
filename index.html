@@ -1,0 +1,104 @@
+<!-- Header must have a title(portfolio), navbar(about me, contact, home)
+main should contain about me, article, image with caption, hobbies, to-do goals list,contact me
+footer must contain copyright, social links, email, navigation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm Saleem, a web developer who builds fast, clean, and responsive websites.">
+    <meta name="keywords" content="web developer, HTML, portfolio, Whosesaleem, responsive design">
+    <meta name="author" content="Whosesaleem">
+    <title>Portfolio</title>
+</head>
+<body style="background-color: black;">
+    <header style="background-color: black; color: yellow;">
+        <h1><b>My Portfolio</b></h1>
+        <nav>
+            <ul>
+                <li><a href="#goal-list">Goal list</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section style="color: white; background-color: black;" id="about-me">
+            <figure>
+                <img src="https://i.pinimg.com/736x/15/11/fb/1511fb01634ceda7203f8e3f24e30024.jpg" alt="An image of picollo from dragonball (yea, that's me)" width="200">
+                <figcaption>My actual photo (No kidding)</figcaption>
+            </figure>
+            <h2>About Me</h2>
+            <p>I'm Saleem, a web developer passionate about building modern, responsive websites. I aim to blend creativity with clean code to create digital experiences that actually matter.</p>
+            <p>Whether it's solving real-world problems or pushing pixels with precision, I love working on projects that challenge me to grow and think outside the box. Sike! That was a lie. I'm very lazy.</p>
+            <details>
+                <summary>Funfact</summary>
+                <p>Sike! Everything that I said above is false. I'm very lazy.</p>
+            </details>
+            <h3>My Hobbies</h3>
+            <ul>
+                <li>Watching anime</li>
+                <li>Can't think of anything else</li>
+            </ul>
+            <hr>
+        </section>
+        <section id="goal-list" style="background-color: black; color: white;">
+            <h2>My goals for this year and their deadlines.</h2>
+            <table width="500" bgcolor="white">
+                <tr bgcolor="yellowgreen">
+                    <th width="300">Goal</th>
+                    <th width="300">Deadline</th>
+                </tr>
+                <tr align="center" bgcolor="gray">
+                    <td>Master Aura Farming</td>
+                    <td>Oct 2025</td>
+                </tr>
+                <tr align="center" bgcolor="gray">
+                    <td>Achieve A Perfect Dap Form</td>
+                    <td>Nov 2025</td>
+                </tr>
+                <tr align="center" bgcolor="gray">
+                    <td>Buy A Lambo</td>
+                    <td>Jan 2026</td>
+                </tr>
+            </table>
+        </section>
+        <section style="background-color: black; color: white;" id="contact">
+            <form>
+                <fieldset>
+                    <legend><h2>Contact Me</h2></legend>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" required maxlength="20"><br>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required maxlength="40"><br>
+
+                    <label for="enter">Send me a message :</label><br>
+                    <textarea name="message" id="enter" rows="3" cols="15"></textarea><br>
+
+                    <input type="reset">
+                    <input type="submit">
+                </fieldset>
+            </form>
+            <hr>
+        </section>
+    </main>
+    <footer style="background-color: black; color: white;">
+        <h3>My Socials :</h3>
+        <a href="mailto:whosesaleem@gmail.com">whosesaleem@gmail.com</a><br>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Whosesaleem">Github</a><br>
+
+        <nav>
+            <ul>
+                <li><a href="#goal-list">Goal list</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+         <small>&copy; 2025 Whosesaleem. All rights reserved.</small>
+    </footer>
+</body>
+</html>
